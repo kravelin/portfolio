@@ -1,14 +1,14 @@
 ﻿/* Zocial settings */
 [class*="zocial-"]:before {
-  color: black;
-  display: inline-block;
-  font-family: 'zocial', sans-serif;
-  text-shadow: 3px 3px 3px #aaa;
-  width: 2em;
+    color: black;
+    display: inline-block;
+    font-family: 'zocial', sans-serif;
+    text-shadow: 3px 3px 3px #aaa;
+    width: 2em;
 }
 
 a:hover [class*="zocial-"]:before {
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+    color: #3d85c6;
 }
 /* end Zocial settings */
 
@@ -18,7 +18,6 @@ body {
     flex-direction: column;
     font-family: 'Lemonada', cursive;
     color: #2d3c49;
-    weight: 300;
     margin: 2vh 0 3vh 0;
     text-align: center;
 }
@@ -35,33 +34,34 @@ div#logo-name {
 }
 
 article {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  max-width: 75em;
-  border-bottom: 1px solid #ddd;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 75em;
+    border-bottom: 1px solid #ddd;
 }
 
 div#banner img {
-  -webkit-filter: saturate(3) opacity(0.7);
-  margin: 0 0 2em 0;
-  max-width: 1200px;
-  width: 100vw;
+    -webkit-filter: saturate(3) opacity(0.7);
+    margin: 0 0 2em 0;
+    max-width: 1200px;
+    width: 100vw;
 }
 
 section {
-  border-bottom: 1px solid #eee;
-  margin: 0 0 3vh 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 0 3vh 0;
 }
 
 section:last-of-type {
-  border-bottom: 1px solid #ccc;
-  margin: 0 0 2em 0;
-  padding: 0 0 2em 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 2em 0;
+    padding: 0 0 2em 0;
 }
 
 .works-title {
     text-align: left;
+    width: 100%;
 }
 
 .scale-image {
@@ -82,6 +82,7 @@ section:last-of-type {
 
 .title-logo {
     margin-top: 20px;
+    max-height: 150px;
 }
 
 .work-item:hover {
@@ -100,7 +101,7 @@ section:last-of-type {
 
 /* footer styles */
 footer {
-  text-align: center;
+    text-align: center;
 }
 
 a#viewSource {
@@ -111,19 +112,25 @@ a#viewSource {
 }
 
 div#social a {
-  margin: 0 1em 0 0;
+    margin: 0 1em 0 0;
 }
 
 div#social a:last-of-type {
-  margin: 0;
+    margin: 0;
 }
 
 div#social {
-  line-height: 2em;
+    line-height: 2em;
 }
 /* end footer style */
 
-/* adjusts name and title so they don't wrap until below 312px width */
+/* adjusts logo, name and title so they don't wrap until below 312px width */
+@media screen and (max-width: 768px) {
+    .title-logo {
+        max-height: 125px;
+    }
+}
+
 @media screen and (max-width: 615px) {
     .title-super {
         font-size: 30px;
@@ -131,6 +138,10 @@ div#social {
 
     .subtitle {
         font-size: 20px;
+    }
+
+    .title-logo {
+        max-height: 100px;
     }
 }
 
@@ -141,6 +152,10 @@ div#social {
 
     .subtitle {
         font-size: 14px;
+    }
+
+    .title-logo {
+        max-height: 75px;
     }
 }
 
@@ -154,6 +169,6 @@ div#social {
 
     .work-item:last-of-type {
         border-bottom: none;
-        padding-bottom: none;
+        padding-bottom: 0;
     }
 }

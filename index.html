@@ -22,7 +22,7 @@
         <header class="container">
             <div class="row" id="logo-name">
               <div class="col-md-3">
-                <img class="title-logo img-responsive img-circle" src="images/cameo.png">
+                <img class="title-logo img-responsive img-circle" src="images/logo.svg" alt="a circlular cameo image of a cougar">
               </div>
               <div class="col-md-9 text-uppercase text-right">
                 <h1 class="title-super text-thin">Kele Kravelin</h1>
@@ -31,40 +31,36 @@
             </div>
         </header>
 
-        <article class="container">
+        <div class="container">
 
             <div id="banner">
                 <img class="img-responsive center-block scale-image" src="images/Seattle-Lightning.jpg" alt="banner of Seattle Skyline at night with lightning">
             </div>
 
-            <section id="works">
-                <div class="row works-title">
-                    <div class="col-md-12">
-                        <h2 class="text-muted">Featured Work</h2>
-                    </div>
-                </div>
+            <article id="works">
+                <h2 class="text-muted works-title">Featured Work</h2>
                 <div class="row">
                     <div class="col-md-4 work-item">
                         <img class="works-image img-responsive" src="images/movies-site.png" alt="A screenshot of the movie website" data-toggle="modal" data-target="#moviepage"
-                             srcset="images/movies-site.png 1000w, images/movies-site_small.png 200w">
-                        <h3>Movie Preview Project</h3>
+                             srcset="images/movies-site.png 1000w, images/movies-site_small.png 200w" sizes="(min-width: 991px) 33vw">
+                        <h4>Movie Preview Project</h4>
                         <p><a href="http://varlia.online/ipnd/stage3">http://varlia.online/ipnd/stage3</a></p>
                     </div>
                     <div class="col-md-4 work-item">
                         <img class="works-image img-responsive" src="images/myblog.png" alt="A screenshot of my responsive blog site" data-toggle="modal" data-target="#myblog"
-                             srcset="images/myblog.png 1000w, images/myblog_small.png 200w">
-                        <h3>Responsive Blog Project</h3>
+                             srcset="images/myblog.png 1000w, images/myblog_small.png 200w" sizes="(min-width: 991px) 33vw">
+                        <h4>Responsive Blog Project</h4>
                         <p><a href="http://varlia.online/fsnd/blog">http://varlia.online/fsnd/blog</a></p>
                     </div>
                     <div class="col-md-4 work-item">
                         <img class="works-image img-responsive" src="images/charsheet.png" alt="A screenshot of my character sheet project" data-toggle="modal" data-target="#charsheet"
-                             srcset="images/charsheet.png 1000w, images/charsheet_small.png 200w">
-                        <h3>Character Sheet Project</h3>
+                             srcset="images/charsheet.png 1000w, images/charsheet_small.png 200w" sizes="(min-width: 991px) 33vw">
+                        <h4>Character Sheet Project</h4>
                         <p><a href="http://varlia.online/ipnd/stage1">http://varlia.online/ipnd/stage1</a></p>
                     </div>
                 </div>
-            </section>
-        </article>
+            </article>
+        </div>
 
         <footer>
             <div id="social">
@@ -73,7 +69,14 @@
                 <a href="https://plus.google.com/+KeleKravelin" class="zocial-googleplus">Google+</a>
             </div>
 
-            <a href="//github.com/kravelin/" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+            <a href="//github.com/kravelin/portfolio" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                </a>
+            </p>
+
         </footer>
 
         <!-- Modals -->
@@ -84,7 +87,7 @@
                         <h4 class="modal-title" id="moviesModal">Movie Preview Project</h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive scale-image modal-image" src="images/movies-site_medium.png">
+                        <img class="img-responsive scale-image modal-image" src="images/movies-site_medium.png" alt="screenshot of the movie preview project website">
                         <p>The goal of this project was to populate instances of a class in python and use them to render a webpage
                            that shows off some of my favorite movies and can play their trailers.</p>
                     </div>
@@ -102,7 +105,7 @@
                         <h4 class="modal-title" id="myBlogModal">Responsive Blog Project</h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive scale-image modal-image" src="images/myblog_medium.png">
+                        <img class="img-responsive scale-image modal-image" src="images/myblog_medium.png" alt="screenshot of the resposive blog project website">
                         <p>The goal of this project was to utilize responsive images to reduce load times and make a blog more readable on various devices. On top of the base requirements
                            I also put a background on blog entries to make them stand out a bit more.</p>
                     </div>
@@ -120,7 +123,7 @@
                         <h4 class="modal-title" id="charsheetModal">Movie Preview Page</h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive scale-image modal-image" src="images/charsheet_medium.png">
+                        <img class="img-responsive scale-image modal-image" src="images/charsheet_medium.png" alt="screenshot of the character sheet project website">
                         <p>The goal of this project was to utilize a basic knowledge of HTML and CSS to create a website. I chose to create a NPC for 5th Edition Dungeons & Dragons.
                            I used the look of the monster statistic blocks from the Monster Manual for the visual layout and style. As this was my first project with Udacity it is very
                            basic and has no responsiveness or other polished aspects.</p>
