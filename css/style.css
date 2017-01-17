@@ -1,0 +1,159 @@
+﻿/* Zocial settings */
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+
+a:hover [class*="zocial-"]:before {
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+}
+/* end Zocial settings */
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lemonada', cursive;
+    color: #2d3c49;
+    weight: 300;
+    margin: 2vh 0 3vh 0;
+    text-align: center;
+}
+
+header {
+    border-bottom: 5px solid #7d97ad;
+    padding: 0 0 1em 0;
+    margin-bottom: 2em;
+}
+
+div#logo-name {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 75em;
+  border-bottom: 1px solid #ddd;
+}
+
+div#banner img {
+  -webkit-filter: saturate(3) opacity(0.7);
+  margin: 0 0 2em 0;
+  max-width: 1200px;
+  width: 100vw;
+}
+
+section {
+  border-bottom: 1px solid #eee;
+  margin: 0 0 3vh 0;
+}
+
+section:last-of-type {
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 2em 0;
+  padding: 0 0 2em 0;
+}
+
+.works-title {
+    text-align: left;
+}
+
+.scale-image {
+    max-height: 350px;
+}
+
+.text-muted {
+    color: #BCBBBB;
+}
+
+.text-thin {
+    font-weight: 300;
+}
+
+.title-super {
+    font-size: 60px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+.work-item:hover {
+    color: #3d85c6;
+    cursor: pointer;
+}
+
+.works-image {
+    padding-right: 10px;
+}
+
+.modal-image {
+    padding: 0 0 20px 20px;
+    border-bottom: 3px solid #ddd;
+}
+
+/* footer styles */
+footer {
+  text-align: center;
+}
+
+a#viewSource {
+    border-top: 1px solid #ddd;
+    display: block;
+    margin: 1.3em 0 0 0;
+    padding: 1em 0 0 0;
+}
+
+div#social a {
+  margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+  margin: 0;
+}
+
+div#social {
+  line-height: 2em;
+}
+/* end footer style */
+
+/* adjusts name and title so they don't wrap until below 312px width */
+@media screen and (max-width: 615px) {
+    .title-super {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .title-super {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}
+
+/* add a breakline between works if they're stacked verticaly */
+@media screen and (max-width: 991px) {
+    .work-item {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .work-item:last-of-type {
+        border-bottom: none;
+        padding-bottom: none;
+    }
+}

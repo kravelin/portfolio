@@ -1,0 +1,136 @@
+﻿<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta name="description" content="Udacity portfolio project for FSND course" />
+        <meta name="author" content="Kele Kravelin">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+        <meta charset="utf-8">
+
+        <title>Kele Kravelin's Portfolio Page</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lemonada:300,400">
+        <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <header class="container">
+            <div class="row" id="logo-name">
+              <div class="col-md-3">
+                <img class="title-logo img-responsive img-circle" src="images/cameo.png">
+              </div>
+              <div class="col-md-9 text-uppercase text-right">
+                <h1 class="title-super text-thin">Kele Kravelin</h1>
+                <h3 class="subtitle">Back-End Sorcerer</h3>
+              </div>
+            </div>
+        </header>
+
+        <article class="container">
+
+            <div id="banner">
+                <img class="img-responsive center-block scale-image" src="images/Seattle-Lightning.jpg" alt="banner of Seattle Skyline at night with lightning">
+            </div>
+
+            <section id="works">
+                <div class="row works-title">
+                    <div class="col-md-12">
+                        <h2 class="text-muted">Featured Work</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 work-item">
+                        <img class="works-image img-responsive" src="images/movies-site.png" alt="A screenshot of the movie website" data-toggle="modal" data-target="#moviepage"
+                             srcset="images/movies-site.png 1000w, images/movies-site_small.png 200w">
+                        <h3>Movie Preview Project</h3>
+                        <p><a href="http://varlia.online/ipnd/stage3">http://varlia.online/ipnd/stage3</a></p>
+                    </div>
+                    <div class="col-md-4 work-item">
+                        <img class="works-image img-responsive" src="images/myblog.png" alt="A screenshot of my responsive blog site" data-toggle="modal" data-target="#myblog"
+                             srcset="images/myblog.png 1000w, images/myblog_small.png 200w">
+                        <h3>Responsive Blog Project</h3>
+                        <p><a href="http://varlia.online/fsnd/blog">http://varlia.online/fsnd/blog</a></p>
+                    </div>
+                    <div class="col-md-4 work-item">
+                        <img class="works-image img-responsive" src="images/charsheet.png" alt="A screenshot of my character sheet project" data-toggle="modal" data-target="#charsheet"
+                             srcset="images/charsheet.png 1000w, images/charsheet_small.png 200w">
+                        <h3>Character Sheet Project</h3>
+                        <p><a href="http://varlia.online/ipnd/stage1">http://varlia.online/ipnd/stage1</a></p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer>
+            <div id="social">
+                <a href="https://twitter.com/Grazel" class="zocial-twitter">Twitter</a>
+                <a href="https://www.facebook.com/Grazkitty" class="zocial-facebook">Facebook</a>
+                <a href="https://plus.google.com/+KeleKravelin" class="zocial-googleplus">Google+</a>
+            </div>
+
+            <a href="//github.com/kravelin/" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+        </footer>
+
+        <!-- Modals -->
+        <div class="modal fade" id="moviepage" tabindex="-1" role="dialog" aria-labelledby="moviesModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="moviesModal">Movie Preview Project</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive scale-image modal-image" src="images/movies-site_medium.png">
+                        <p>The goal of this project was to populate instances of a class in python and use them to render a webpage
+                           that shows off some of my favorite movies and can play their trailers.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myblog" tabindex="-1" role="dialog" aria-labelledby="myBlogModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myBlogModal">Responsive Blog Project</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive scale-image modal-image" src="images/myblog_medium.png">
+                        <p>The goal of this project was to utilize responsive images to reduce load times and make a blog more readable on various devices. On top of the base requirements
+                           I also put a background on blog entries to make them stand out a bit more.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="charsheet" tabindex="-1" role="dialog" aria-labelledby="charsheetModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="charsheetModal">Movie Preview Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive scale-image modal-image" src="images/charsheet_medium.png">
+                        <p>The goal of this project was to utilize a basic knowledge of HTML and CSS to create a website. I chose to create a NPC for 5th Edition Dungeons & Dragons.
+                           I used the look of the monster statistic blocks from the Monster Manual for the visual layout and style. As this was my first project with Udacity it is very
+                           basic and has no responsiveness or other polished aspects.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
