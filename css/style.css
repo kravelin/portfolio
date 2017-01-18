@@ -2,7 +2,7 @@
 [class*="zocial-"]:before {
     color: black;
     display: inline-block;
-    font-family: 'zocial', sans-serif;
+    font-family: "zocial", sans-serif;
     text-shadow: 3px 3px 3px #aaa;
     width: 2em;
 }
@@ -16,7 +16,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: 'Lemonada', cursive;
+    font-family: "Lemonada", cursive;
     color: #2d3c49;
     margin: 2vh 0 3vh 0;
     text-align: center;
@@ -41,10 +41,10 @@ article {
     border-bottom: 1px solid #ddd;
 }
 
-div#banner img {
+div#topgraphic img {
     -webkit-filter: saturate(3) opacity(0.7);
     margin: 0 0 2em 0;
-    max-width: 1200px;
+    max-width: 1125px;
     width: 100vw;
 }
 
@@ -99,6 +99,12 @@ section:last-of-type {
     border-bottom: 3px solid #ddd;
 }
 
+.valid-css {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
 /* footer styles */
 footer {
     text-align: center;
@@ -129,6 +135,14 @@ div#social {
     .title-logo {
         max-height: 125px;
     }
+
+    .scale-image {
+        max-height: 275px;
+    }
+
+    div#topgraphic img {
+        max-width: 700px;
+    }
 }
 
 @media screen and (max-width: 615px) {
@@ -143,9 +157,17 @@ div#social {
     .title-logo {
         max-height: 100px;
     }
+
+    .scale-image {
+        max-height: 225px;
+    }
+
+    div#topgraphic img {
+        max-width: 600px;
+    }
 }
 
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 412px) {
     .title-super {
         font-size: 20px;
     }
@@ -156,6 +178,14 @@ div#social {
 
     .title-logo {
         max-height: 75px;
+    }
+
+    .scale-image {
+        max-height: 175px;
+    }
+
+    div#topgraphic img {
+        max-width: 350px;
     }
 }
 

@@ -4,7 +4,7 @@
     <head>
         <meta name="description" content="Udacity portfolio project for FSND course" />
         <meta name="author" content="Kele Kravelin">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <meta charset="utf-8">
 
         <title>Kele Kravelin's Portfolio Page</title>
@@ -13,9 +13,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lemonada:300,400">
         <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
-
-        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -33,28 +30,28 @@
 
         <div class="container">
 
-            <div id="banner">
+            <div id="topgraphic">
                 <img class="img-responsive center-block scale-image" src="images/Seattle-Lightning.jpg" alt="banner of Seattle Skyline at night with lightning">
             </div>
 
             <article id="works">
                 <h2 class="text-muted works-title">Featured Work</h2>
                 <div class="row">
-                    <div class="col-md-4 work-item">
-                        <img class="works-image img-responsive" src="images/movies-site.png" alt="A screenshot of the movie website" data-toggle="modal" data-target="#moviepage"
+                    <div class="col-xs-12 col-sm-12 col-md-4 work-item">
+                        <img class="works-image img-responsive center-block scale-image" src="images/movies-site.png" alt="A screenshot of the movie website" data-toggle="modal" data-target="#moviepage"
                              srcset="images/movies-site.png 1000w, images/movies-site_small.png 200w" sizes="(min-width: 991px) 33vw">
                         <h4>Movie Preview Project</h4>
                         <p><a href="http://varlia.online/ipnd/stage3">http://varlia.online/ipnd/stage3</a></p>
                     </div>
-                    <div class="col-md-4 work-item">
-                        <img class="works-image img-responsive" src="images/myblog.png" alt="A screenshot of my responsive blog site" data-toggle="modal" data-target="#myblog"
+                    <div class="col-xs-12 col-sm-12 col-md-4 work-item">
+                        <img class="works-image img-responsive center-block scale-image" src="images/myblog.png" alt="A screenshot of my responsive blog site" data-toggle="modal" data-target="#myblog"
                              srcset="images/myblog.png 1000w, images/myblog_small.png 200w" sizes="(min-width: 991px) 33vw">
                         <h4>Responsive Blog Project</h4>
                         <p><a href="http://varlia.online/fsnd/blog">http://varlia.online/fsnd/blog</a></p>
                     </div>
-                    <div class="col-md-4 work-item">
-                        <img class="works-image img-responsive" src="images/charsheet.png" alt="A screenshot of my character sheet project" data-toggle="modal" data-target="#charsheet"
-                             srcset="images/charsheet.png 1000w, images/charsheet_small.png 200w" sizes="(min-width: 991px) 33vw">
+                    <div class="col-xs-12 col-sm-12 col-md-4 work-item">
+                        <img class="works-image img-responsive center-block scale-image" src="images/charsheet.png" alt="A screenshot of my character sheet project" data-toggle="modal"
+                             data-target="#charsheet" srcset="images/charsheet.png 1000w, images/charsheet_small.png 200w" sizes="(min-width: 991px) 33vw">
                         <h4>Character Sheet Project</h4>
                         <p><a href="http://varlia.online/ipnd/stage1">http://varlia.online/ipnd/stage1</a></p>
                     </div>
@@ -62,22 +59,24 @@
             </article>
         </div>
 
-        <footer>
-            <div id="social">
-                <a href="https://twitter.com/Grazel" class="zocial-twitter">Twitter</a>
-                <a href="https://www.facebook.com/Grazkitty" class="zocial-facebook">Facebook</a>
-                <a href="https://plus.google.com/+KeleKravelin" class="zocial-googleplus">Google+</a>
-            </div>
+        <div class="container">
+            <footer>
+                <div id="social">
+                    <a href="https://twitter.com/Grazel" class="zocial-twitter">Twitter</a>
+                    <a href="https://www.facebook.com/Grazkitty" class="zocial-facebook">Facebook</a>
+                    <a href="https://plus.google.com/+KeleKravelin" class="zocial-googleplus">Google+</a>
+                </div>
 
-            <a href="//github.com/kravelin/portfolio" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+                <a href="//github.com/kravelin/portfolio" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
 
-            <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-                </a>
-            </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img class="valid-css" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                </p>
 
-        </footer>
+            </footer>
+        </div>
 
         <!-- Modals -->
         <div class="modal fade" id="moviepage" tabindex="-1" role="dialog" aria-labelledby="moviesModal" aria-hidden="true">
@@ -135,5 +134,7 @@
             </div>
         </div>
 
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
